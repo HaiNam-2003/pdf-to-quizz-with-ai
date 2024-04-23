@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../pdf-to-quizz"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Zalo Received Files/KimChi"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "KimChi"
+	}
+}
