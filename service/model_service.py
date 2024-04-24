@@ -43,9 +43,9 @@ class ModelService():
     def respone(self,file_data_path):
         db = self.read_vectors_db(vector_db_path=file_data_path)
         llm_chain = self.create_qa_chain(db=db)
-        query = """You are a teacher preparing questions for a quiz. Given the following document, please generate 10 multiple-choice questions (MCQs) with 4 options and a corresponding answer letter based on the document.The response only bellow example 
+        query = """You are a teacher preparing questions for a quiz. Given the following document, please generate 20 multiple-choice questions (MCQs) with 4 options and a corresponding answer letter based on the document.The response only bellow example 
         ''Example:
-        Question1: What is the individual's name who stated they want to be a DevOps Engineer?
+        Question1: What is the individual's name who stated they want to be a DevOps Engine er?
         CHOICE_A: Huynh Ngoc Huy
         CHOICE_B: VietHan Korea
         CHOICE_C: DevOps Engineer
@@ -54,5 +54,3 @@ class ModelService():
         """
         response = llm_chain.invoke({"query": query})
         return response
-moelService = ModelService()
-print(moelService.respone("/Users/mac/Documents/Final Project/app/service/test/vectorstores/db_faiss/91"))

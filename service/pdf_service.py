@@ -6,8 +6,8 @@ import random
 
 class PdfService():
     def __init__(self):
-        self.pdf_data_path = "/Users/mac/Documents/Final Project/app/service/test/data"
-        self.vector_db_path = "/Users/mac/Documents/Final Project/app/service/test/vectorstores/db_faiss"
+        self.pdf_data_path = "/Users/mac/Documents/Final Project/app/data/temp"
+        self.vector_db_path = "/Users/mac/Documents/Final Project/app/data/vectorstore"
     def create_db_from_files(self,fileName):
         # Khai bao loader de quet toan bo thu muc dataa
         loader = PyPDFLoader(f"{self.pdf_data_path}/{fileName}.pdf")    
@@ -18,6 +18,8 @@ class PdfService():
         embedding_model = GPT4AllEmbeddings(model_file="/Users/mac/Downloads/all-MiniLM-L6-v2-f16.gguf")
         db = FAISS.from_documents(chunks, embedding_model)
         db.save_local(f"{self.vector_db_path}/{random_number}")
-        return f"{self.vector_db_path}/{random_number}"
+        return f"{self.vector_db_path}/5"
+    def handle_file_pdf():
+        return None
 
 
