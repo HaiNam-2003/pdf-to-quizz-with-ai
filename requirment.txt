@@ -4,3 +4,5 @@ openapi-schema-pydantic==1.2.4
 pypdf==3.7.0
 streamlit==1.21.0
 fpdf==1.7.2
+fastapi 
+uvicorn 

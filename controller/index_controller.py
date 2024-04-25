@@ -16,6 +16,9 @@ async def create_student(name):
 @router.post("/pdf")
 async def edit_pdf_endpoint(input_pdf: UploadFile = File(...)):
     # Lưu file PDF vào thư mục tạm
-    temp_pdf_path = f"/path/to/temp/{input_pdf.filename}"
+    temp_pdf_path = f"/Users/mac/Documents/Final Project/app/data/temp/{input_pdf.filename}"
     with open(temp_pdf_path, "wb") as temp_pdf:
         shutil.copyfileobj(input_pdf.file, temp_pdf)
+    index_service = indexService()
+    response = index_service.result(fileName=input_pdf.filename)
+    return response

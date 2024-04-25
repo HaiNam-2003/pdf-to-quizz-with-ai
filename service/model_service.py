@@ -13,12 +13,6 @@ class ModelService():
         self.template = """<|im_start|>system\n\n
         {context}<|im_end|>\n<|im_start|>user\n{question}<|im_end|>\n<|im_start|>assistant"""
     def loadLLM(self):
-        # llm = CTransformers(
-        #     model=self.llm_file,
-        #     model_type="llama",
-        #     max_new_tokens=1024,
-        #     temperature=0.01
-        # )
         GOOGLE_API_KEY = "AIzaSyBKiReCTYg1L_EX7SypuRbclomM0lrSSL4"
         llm = ChatGoogleGenerativeAI(model="gemini-pro",
                  temperature=0.7, top_p=0.85, google_api_key=GOOGLE_API_KEY)
@@ -43,7 +37,7 @@ class ModelService():
     def respone(self,file_data_path):
         db = self.read_vectors_db(vector_db_path=file_data_path)
         llm_chain = self.create_qa_chain(db=db)
-        query = """You are a teacher preparing questions for a quiz. Given the following document, please generate 20 multiple-choice questions (MCQs) with 4 options and a corresponding answer letter based on the document.The response only bellow example 
+        query = """You are a teacher preparing questions for a quiz. Given the following document, please generate 20 multiple-choice questions (MCQs) with 4 options and a corresponding answer letter based on the document.The response only bellow example. The response is translate to VietNamese
         ''Example:
         Question1: What is the individual's name who stated they want to be a DevOps Engine er?
         CHOICE_A: Huynh Ngoc Huy
