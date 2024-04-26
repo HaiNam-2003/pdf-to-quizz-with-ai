@@ -3,6 +3,7 @@ from fastapi import APIRouter,UploadFile,File
 from service.test.test2 import test
 from service.test.util import parse_quiz_text
 from service.index_service import indexService
+from util.output_parse import Parse
 import shutil
 
 router = APIRouter()
@@ -20,5 +21,7 @@ async def edit_pdf_endpoint(input_pdf: UploadFile = File(...)):
     with open(temp_pdf_path, "wb") as temp_pdf:
         shutil.copyfileobj(input_pdf.file, temp_pdf)
     index_service = indexService()
-    response = index_service.result(fileName=input_pdf.filename)
+    text = index_service.result(fileName=input_pdf.filename)
+    parse = Parse()
+    response = parse.parse_questions(text=text)
     return response

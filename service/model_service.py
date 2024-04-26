@@ -1,10 +1,10 @@
 from langchain_community.llms import CTransformers
-from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain_community.embeddings import GPT4AllEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain.output_parsers.regex import RegexParser
 
 class ModelService():
     def __init__(self) -> None:
@@ -12,10 +12,14 @@ class ModelService():
         self.embedding_model_file = "/Users/mac/Downloads/all-MiniLM-L6-v2-f16.gguf"
         self.template = """<|im_start|>system\n\n
         {context}<|im_end|>\n<|im_start|>user\n{question}<|im_end|>\n<|im_start|>assistant"""
+        self.output_parser = RegexParser(
+    regex=r"Question\s?\d?:\s+\n?(.*?)\nCHOICE_A(.*?)\nCHOICE_B(.*?)\nCHOICE_C(.*?)\nCHOICE_D(.*?)(?:\n)+Answer:\s?(.*)\n?\n?Question\s?\d?:\s+\n?(.*?)\nCHOICE_A(.*?)\nCHOICE_B(.*?)\nCHOICE_C(.*?)\nCHOICE_D(.*?)(?:\n)+Answer:\s?(.*)", 
+    output_keys=["question1", "A_1", "B_1", "C_1", "D_1", "reponse1","question2", "A_2", "B_2", "C_2", "D_2", "reponse2"]
+)
     def loadLLM(self):
         GOOGLE_API_KEY = "AIzaSyBKiReCTYg1L_EX7SypuRbclomM0lrSSL4"
         llm = ChatGoogleGenerativeAI(model="gemini-pro",
-                 temperature=0.7, top_p=0.85, google_api_key=GOOGLE_API_KEY)
+                 temperature=0.1, top_p=0.85, google_api_key=GOOGLE_API_KEY)
         return llm
     def create_prompt(self):
         prompt = PromptTemplate(template = self.template,input_variables=["context", "question"])
@@ -27,8 +31,8 @@ class ModelService():
             retriever=db.as_retriever(search_kwargs={"k":3}, max_tokens_limit=1024),
             return_source_documents=True,
             chain_type_kwargs={
-                'prompt': self.create_prompt()}
-        )
+                'prompt': self.create_prompt()
+                } )
         return llm_chain
     def read_vectors_db(self,vector_db_path):
         embedding_model = GPT4AllEmbeddings(model_file=self.embedding_model_file)
