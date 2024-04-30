@@ -41,14 +41,20 @@ class ModelService():
     def respone(self,file_data_path):
         db = self.read_vectors_db(vector_db_path=file_data_path)
         llm_chain = self.create_qa_chain(db=db)
-        query = """You are a teacher preparing questions for a quiz. Given the following document, please generate 20 multiple-choice questions (MCQs) with 4 options and a corresponding answer letter based on the document.The response only bellow example. The response is translate to VietNamese
-        ''Example:
-        Question1: What is the individual's name who stated they want to be a DevOps Engine er?
-        CHOICE_A: Huynh Ngoc Huy
-        CHOICE_B: VietHan Korea
-        CHOICE_C: DevOps Engineer
-        CHOICE_D: Feature
-        Answer: A''
+        query = """You are a teacher preparing questions for a quiz. Given the following document, please generate 10 multiple-choice questions (MCQs) with 4 options and a corresponding answer letter based on the document.The response only bellow example. The response is translate to VietNamese
+            Example question:
+            
+            <start question>
+            Question here
+            A: choice here
+            B: choice here
+            C: choice here
+            D: choice here
+            Answer: A or B or C or D
+            <end question>
+            
+            These questions should be detailed and solely based on the information provided in the document.
         """
         response = llm_chain.invoke({"query": query})
         return response
+    

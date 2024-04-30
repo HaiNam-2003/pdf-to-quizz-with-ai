@@ -1,12 +1,12 @@
 from fastapi import APIRouter,UploadFile,File
-
-from service.test.test2 import test
-from service.test.util import parse_quiz_text
+from fastapi.responses import JSONResponse
 from service.index_service import indexService
 from util.output_parse import Parse
 import shutil
 
 router = APIRouter()
+
+
 
 @router.get("/")
 async def create_student(name):
@@ -16,12 +16,9 @@ async def create_student(name):
 
 @router.post("/pdf")
 async def edit_pdf_endpoint(input_pdf: UploadFile = File(...)):
-    # Lưu file PDF vào thư mục tạm
-    temp_pdf_path = f"/Users/mac/Documents/Final Project/app/data/temp/{input_pdf.filename}"
-    with open(temp_pdf_path, "wb") as temp_pdf:
-        shutil.copyfileobj(input_pdf.file, temp_pdf)
     index_service = indexService()
-    text = index_service.result(fileName=input_pdf.filename)
+    text = index_service.result(input_pdf=input_pdf)
     parse = Parse()
     response = parse.parse_questions(text=text)
-    return response
+    print(response)
+    return {"status" : "200","data" : response }

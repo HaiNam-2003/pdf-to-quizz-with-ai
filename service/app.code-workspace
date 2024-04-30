@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../../../Machine Learning"
+		},
+		{
+			"path": "../../client"
 		}
 	],
 	"settings": {
@@ -72,6 +75,7 @@
 			"unordered_map": "cpp",
 			"variant": "cpp",
 			"algorithm": "cpp"
-		}
+		},
+		"liveServer.settings.multiRootWorkspaceName": "client"
 	}
 }
