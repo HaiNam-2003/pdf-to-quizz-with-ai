@@ -4,16 +4,22 @@
 			"path": ".."
 		},
 		{
-			"path": "../../pdf-to-quizz"
-		},
-		{
-			"path": "../../../../Downloads/pdf-to-quizz-master"
+			"path": "../../../../Downloads/angular16_quiz_app-main-2"
 		},
 		{
 			"path": "../../../Machine Learning"
 		},
 		{
-			"path": "../../client"
+			"path": "../../../../Downloads/instagram-clone-main-2"
+		},
+		{
+			"path": "../../../../Downloads/DVWA"
+		},
+		{
+			"path": "../../../Security Infomation/FinalProject"
+		},
+		{
+			"path": "../../../PTTKGT"
 		}
 	],
 	"settings": {
@@ -76,6 +82,6 @@
 			"variant": "cpp",
 			"algorithm": "cpp"
 		},
-		"liveServer.settings.multiRootWorkspaceName": "client"
+		"liveServer.settings.multiRootWorkspaceName": null
 	}
 }
