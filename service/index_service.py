@@ -14,7 +14,7 @@ class indexService():
     def result(self,input_pdf):
         modelService = ModelService()
         pdfService = PdfService()
-        temp_pdf_path = f"/Users/mac/Documents/Final Project/app/data/temp/{input_pdf.filename}"
+        temp_pdf_path = f"E:/BaoCaoDACS/DACN1/pdf-to-quizz/data/temp/{input_pdf.filename}"
         with open(temp_pdf_path, "wb") as temp_pdf:
                 shutil.copyfileobj(input_pdf.file, temp_pdf)
         fileVectorStore = pdfService.create_db_from_files(fileName=input_pdf.filename)
@@ -26,7 +26,7 @@ class indexService():
         while True:
             # Tạo một số ngẫu nhiên
             random_number = random.randint(1, 10000)    # Import 'random' để sử dụng
-            file_path = f"/Users/mac/Documents/Final Project/app/data/pdf/{random_number}.json"
+            file_path = f"E:/BaoCaoDACS/DACN1/pdf-to-quizz/data/pdf/{random_number}.json"
             # Kiểm tra xem tệp có tồn tại không
             if not os.path.exists(file_path):
                 # Nếu tệp không tồn tại, ghi dữ liệu vào tệp và thoát khỏi vòng lặp
@@ -44,8 +44,9 @@ class indexService():
             list_quiz.append(result2)
         return list_quiz        
     def get_file_json(self,file_name):
-        file_path = f"/Users/mac/Documents/Final Project/app/data/pdf/{file_name}.json"
-        with open(file_path, "r") as json_file:
+        file_path = f"E:/BaoCaoDACS/DACN1/pdf-to-quizz/data/pdf/{file_name}.json"
+        print('heleo')
+        with open(file_path, "r", encoding='utf-8') as json_file:
             data = json.load(json_file)
         return data
 # print(indexService().result("chovy"))

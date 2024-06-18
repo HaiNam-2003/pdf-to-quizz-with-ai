@@ -8,8 +8,8 @@ from langchain.output_parsers.regex import RegexParser
 
 class ModelService():
     def __init__(self) -> None:
-        self.llm_file =  "/Users/mac/Downloads/Hermes-2-Pro-Mistral-7B.Q5_K_M.gguf"
-        self.embedding_model_file = "/Users/mac/Downloads/all-MiniLM-L6-v2-f16.gguf"
+        self.llm_file =  "E:/python/pdf-to-quizz/model_data/all-MiniLM-L6-v2-f16.gguf"
+        self.embedding_model_file = "E:/python/pdf-to-quizz/model_data/all-MiniLM-L6-v2-f16.gguf"
         self.template = """<|im_start|>system\n\n
         {context}<|im_end|>\n<|im_start|>user\n{question}<|im_end|>\n<|im_start|>assistant"""
         self.output_parser = RegexParser(

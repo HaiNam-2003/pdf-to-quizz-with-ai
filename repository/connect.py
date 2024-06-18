@@ -14,7 +14,7 @@ quiz_table = Table(
 )
 
 # Connect to the database
-DATABASE_URL = "mysql://root:@localhost/test_2"
+DATABASE_URL = "mysql://root:123456@localhost/test_2"
 database = Database(DATABASE_URL)
 
 # Function to execute queries

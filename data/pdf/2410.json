@@ -1,0 +1,112 @@
+[
+    {
+        "question": "Theo tài liệu, nhóm trẻ em nào có khả năng không được đi học cao gấp bốn lần so với nhóm trẻ em khác?",
+        "choices": {
+            "A": "Trẻ em từ các hộ gia đình nghèo nhất",
+            "B": "Trẻ em từ các hộ gia đình giàu nhất",
+            "C": "Trẻ em từ các hộ gia đình trung lưu",
+            "D": "Trẻ em từ các hộ gia đình có thu nhập cao"
+        },
+        "answer": " A",
+        "choice": "A"
+    },
+    {
+        "question": "Tài liệu đề cập đến những yếu tố nào cản trở trẻ em đi học?",
+        "choices": {
+            "A": "Nghèo đói, xung đột vũ trang và các trường hợp khẩn cấp khác",
+            "B": "Thiếu giáo viên và cơ sở vật chất",
+            "C": "Chi phí giáo dục cao",
+            "D": "Sự phân biệt đối xử"
+        },
+        "answer": " A",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, tiến triển đáng kể nào đã đạt được kể từ năm 2000?",
+        "choices": {
+            "A": "Giảm tỷ lệ mù chữ",
+            "B": "Tăng tỷ lệ nhập học",
+            "C": "Cải thiện chất lượng giáo dục",
+            "D": "Tất cả các câu trên"
+        },
+        "answer": " B",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu tập trung vào mục tiêu nào của Liên hợp quốc?",
+        "choices": {
+            "A": "Đảm bảo giáo dục chất lượng, toàn diện và công bằng",
+            "B": "Xóa đói giảm nghèo",
+            "C": "Bảo vệ môi trường",
+            "D": "Thúc đẩy hòa bình và an ninh"
+        },
+        "answer": " A",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, trẻ em từ các hộ gia đình nghèo nhất có khả năng không được đi học là bao nhiêu?",
+        "choices": {
+            "A": "Gấp đôi",
+            "B": "Gấp ba",
+            "C": "Gấp bốn",
+            "D": "Gấp năm"
+        },
+        "answer": " C",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu không đề cập đến yếu tố nào sau đây là cản trở trẻ em đi học?",
+        "choices": {
+            "A": "Chiến tranh",
+            "B": "Bệnh tật",
+            "C": "Thiếu động lực",
+            "D": "Xung đột vũ trang"
+        },
+        "answer": " C",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, tiến triển đáng kể nào đã đạt được trong lĩnh vực giáo dục?",
+        "choices": {
+            "A": "Tăng tỷ lệ nhập học",
+            "B": "Cải thiện chất lượng giáo dục",
+            "C": "Giảm tỷ lệ mù chữ",
+            "D": "Tất cả các câu trên"
+        },
+        "answer": " D",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu nhấn mạnh tầm quan trọng của điều gì đối với giáo dục?",
+        "choices": {
+            "A": "Sự toàn diện",
+            "B": "Sự công bằng",
+            "C": "Chất lượng",
+            "D": "Tất cả các câu trên"
+        },
+        "answer": " D",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, mục tiêu của Liên hợp quốc là gì?",
+        "choices": {
+            "A": "Đảm bảo giáo dục chất lượng cho tất cả mọi người",
+            "B": "Thúc đẩy cơ hội học tập suốt đời",
+            "C": "Cả A và B",
+            "D": "Không có câu trả lời nào ở trên"
+        },
+        "answer": " C",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu không đề cập đến điều nào sau đây là một thách thức đối với giáo dục?",
+        "choices": {
+            "A": "Nghèo đói",
+            "B": "Xung đột",
+            "C": "Thiếu giáo viên",
+            "D": "Sự phân biệt đối xử"
+        },
+        "answer": " C",
+        "choice": "D"
+    }
+]

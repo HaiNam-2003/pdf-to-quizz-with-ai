@@ -19,3 +19,13 @@ class QuizData(BaseModel):
     data: list[QuizItem]
     def add_quiz(self,item : QuizItem):
         self.data.append(item)
+
+class QuizItemSave(BaseModel):
+    question: str
+    choices: Dict[str, str]
+    answer: str
+    choice: str
+class QuizDataSave(BaseModel):
+    data: list[QuizItemSave]
+    def add_quiz(self,item : QuizItem):
+        self.data.append(item)

@@ -1,0 +1,112 @@
+[
+    {
+        "question": "Theo tài liệu, nhóm trẻ em nào có khả năng không được đi học cao gấp bốn lần so với nhóm trẻ em khác?",
+        "choices": {
+            "A": "Trẻ em từ các hộ gia đình nghèo nhất",
+            "B": "Trẻ em từ các hộ gia đình giàu nhất",
+            "C": "Trẻ em từ các hộ gia đình ở mức trung bình",
+            "D": "Trẻ em từ các hộ gia đình ở nông thôn"
+        },
+        "answer": " A",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu đề cập đến những yếu tố nào cản trở trẻ em trên toàn thế giới đến trường?",
+        "choices": {
+            "A": "Nghèo đói và xung đột vũ trang",
+            "B": "Bệnh tật và thiên tai",
+            "C": "Thiếu giáo viên và cơ sở vật chất",
+            "D": "Tất cả các câu trả lời trên"
+        },
+        "answer": " A",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, kể từ năm 2000, đã có tiến bộ đáng kể trong mục tiêu nào?",
+        "choices": {
+            "A": "Đảm bảo giáo dục chất lượng và toàn diện",
+            "B": "Xóa bỏ nạn đói nghèo",
+            "C": "Giảm xung đột vũ trang",
+            "D": "Cải thiện sức khỏe toàn cầu"
+        },
+        "answer": " A",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu không đề cập đến yếu tố nào sau đây là nguyên nhân khiến trẻ em không được đi học?",
+        "choices": {
+            "A": "Thiếu tiền",
+            "B": "Thiếu giáo viên",
+            "C": "Thiếu cơ sở vật chất",
+            "D": "Thiếu động lực"
+        },
+        "answer": " D",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, trẻ em từ các hộ gia đình nghèo nhất có khả năng không được đi học cao gấp bao nhiêu lần so với trẻ em từ các hộ gia đình giàu nhất?",
+        "choices": {
+            "A": "Hai lần",
+            "B": "Ba lần",
+            "C": "Bốn lần",
+            "D": "Năm lần"
+        },
+        "answer": " C",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu đề cập đến những loại tình huống nào có thể khiến trẻ em không được đi học?",
+        "choices": {
+            "A": "Nghèo đói và xung đột vũ trang",
+            "B": "Thiên tai và dịch bệnh",
+            "C": "Chiến tranh và bạo lực",
+            "D": "Tất cả các câu trả lời trên"
+        },
+        "answer": " D",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, mục tiêu giáo dục nào được đề cập?",
+        "choices": {
+            "A": "Đảm bảo giáo dục chất lượng và toàn diện",
+            "B": "Thúc đẩy cơ hội học tập suốt đời",
+            "C": "Cả A và B",
+            "D": "Không có mục tiêu nào được đề cập"
+        },
+        "answer": " C",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu không đề cập đến yếu tố nào sau đây là một thách thức đối với giáo dục?",
+        "choices": {
+            "A": "Thiếu tài trợ",
+            "B": "Thiếu giáo viên đủ trình độ",
+            "C": "Thiếu cơ sở vật chất",
+            "D": "Thiếu động lực của học sinh"
+        },
+        "answer": " D",
+        "choice": "D"
+    },
+    {
+        "question": "Theo tài liệu, trẻ em từ các hộ gia đình nghèo nhất có khả năng không được đi học cao gấp bao nhiêu lần so với trẻ em từ các hộ gia đình giàu nhất?",
+        "choices": {
+            "A": "Hai lần",
+            "B": "Ba lần",
+            "C": "Bốn lần",
+            "D": "Năm lần"
+        },
+        "answer": " C",
+        "choice": "D"
+    },
+    {
+        "question": "Tài liệu đề cập đến những loại tình huống nào có thể khiến trẻ em không được đi học?",
+        "choices": {
+            "A": "Nghèo đói và xung đột vũ trang",
+            "B": "Thiên tai và dịch bệnh",
+            "C": "Chiến tranh và bạo lực",
+            "D": "Tất cả các câu trả lời trên"
+        },
+        "answer": " D",
+        "choice": "D"
+    }
+]
